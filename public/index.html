@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Login Demo</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="card">
+        <h2>ការចូលប្រើដោយ OTP</h2>
+
+        <div id="email-step">
+            <label for="email">អាសយដ្ឋានអ៊ីមែល:</label>
+            <input type="email" id="email" placeholder="បញ្ចូលអ៊ីមែលរបស់អ្នក..." required>
+            <button id="send-otp-btn" class="btn primary-btn">ផ្ញើកូដ OTP</button>
+        </div>
+        
+        <div id="otp-step" style="display:none;">
+            <label for="otp">បញ្ចូលកូដ OTP ៦ ខ្ទង់:</label>
+            <input type="text" id="otp" placeholder="••••••" maxlength="6" required>
+            <button id="verify-otp-btn" class="btn secondary-btn">ផ្ទៀងផ្ទាត់</button>
+        </div>
+
+        <p id="message" class="message-text"></p>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
